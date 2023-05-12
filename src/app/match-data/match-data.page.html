@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>MatchData</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">MatchData</ion-title>
+      
+
+
+
+
+
+        
+      
+
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- <ion-card *ngFor="let a of arr">
+    <ion-card-header>
+      <img *ngFor="let a of a.imgPath" src="{{a}}">
+      <ion-card-subtitle>{{a}}</ion-card-subtitle>
+      <ion-card-title>{{a}}</ion-card-title>
+    </ion-card-header>
+  </ion-card> -->
+      
+      <ion-grid>
+        <ion-col><ion-row *ngFor="let a of imgPath"><img src="{{a}}"></ion-row><ion-col><ion-row *ngFor="let a of arr">{{a}}</ion-row></ion-col></ion-col>
+    
+        <!-- <ion-col><ion-row *ngFor="let a of imgPath"><img src="{{a}}"></ion-row></ion-col>  -->
+      </ion-grid>
+
+
+
+</ion-content>

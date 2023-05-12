@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Search</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Search</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <p>Please save save your favorite Champion</p>
+    <ion-searchbar placeholder="Default" color="success" (keydown.enter)="saveChampion()" value ='myChampion'></ion-searchbar>
+
+  <ion-button (click)="saveChampion()">Save</ion-button>
+  <ion-button>Search</ion-button>
+</div>
+</ion-content>
